@@ -1,0 +1,709 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #29234a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 65px;
+    background: #168de2;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo img {
+    width: 65px;
+    height: auto;
+    margin-top: 10px;
+};
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+    color: white;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 550px;
+
+    background: #b9dcf5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 70px 10%;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    max-width: 430px;
+}
+
+.main-btn {
+    display: inline-block;
+
+    background: #168de2;
+    color: white;
+
+    padding: 12px 30px;
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+
+
+/* PHONE */
+
+.phone {
+    width: 230px;
+    height: 430px;
+
+    background: #1d1d1d;
+
+    border-radius: 30px;
+    padding: 10px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
+.phone-top {
+    width: 80px;
+    height: 15px;
+
+    background: #111;
+
+    border-radius: 20px;
+
+    margin: auto;
+}
+
+.phone-screen {
+    height: 380px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    margin-top: 8px;
+    padding: 30px 20px;
+}
+
+.screen-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.screen-box {
+    height: 100px;
+
+    background: #b9dcf5;
+
+    border-radius: 15px;
+
+    margin: 20px 0;
+}
+
+.screen-line {
+    height: 10px;
+    width: 100%;
+
+    background: #ddd;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.screen-line.short {
+    width: 70%;
+}
+
+.phone-screen button {
+    margin-top: 25px;
+
+    width: 100%;
+
+    border: none;
+    background: #168de2;
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 70px 8%;
+}
+
+.feature-card {
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h2 {
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.green {
+    background: #c8f1df;
+}
+
+.pink {
+    background: #ffd1d4;
+}
+
+.yellow {
+    background: #ffe6b8;
+}
+
+.purple-light {
+    background: #d3cdf6;
+}
+
+
+/* =========================
+   PURPLE SECTION
+========================= */
+
+.purple-section {
+    background: #8f82e3;
+
+    color: white;
+
+    padding: 70px 8%;
+
+    text-align: center;
+}
+
+.purple-content {
+    max-width: 550px;
+    margin: auto;
+}
+
+.illustration {
+    position: relative;
+
+    width: 260px;
+    height: 180px;
+
+    margin: auto auto 30px;
+}
+
+.circle {
+    width: 170px;
+    height: 170px;
+
+    background: #bdb5f3;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 45px;
+    top: 0;
+}
+
+
+.person {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 100px;
+
+    padding-top: 35px;
+}
+
+.purple-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+
+/* WHITE CARD */
+
+.white-card {
+    background: white;
+    color: #29234a;
+
+    max-width: 380px;
+
+    margin: 50px auto 0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+.small-image {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.white-card h3 {
+    margin-bottom: 10px;
+}
+
+.small-arrow {
+    display: block;
+
+    width: 35px;
+    height: 35px;
+
+    background: #8f82e3;
+    color: white;
+
+    border-radius: 50%;
+
+    margin: 20px auto 0;
+
+    line-height: 35px;
+}
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #8f82e3;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.testimonial-card {
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.person-photo {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    font-size: 17px;
+}
+
+.testimonial-card span {
+    font-size: 13px;
+}
+
+.blue-card {
+    background: #cbdff3;
+}
+
+.yellow-card {
+    background: #ffe0a9;
+}
+
+.green-card {
+    background: #c6eddc;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    padding: 80px 8%;
+    background: #f8f7ff;
+}
+
+.benefit {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    gap: 25px;
+
+    border: 1px solid #eee;
+}
+
+.number {
+    color: #8f82e3;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.benefit h3 {
+    margin-bottom: 8px;
+}
+
+.benefit p {
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.benefit a {
+    color: #8f82e3;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 80px 8%;
+}
+
+.about-text {
+    max-width: 700px;
+
+    text-align: center;
+
+    margin: 0 auto 50px;
+
+    color: #666;
+}
+
+.founder {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.founder-photo {
+    width: 120px;
+    height: 120px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #d8d4f6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 65px;
+}
+
+.quote span {
+    font-size: 50px;
+
+    color: #8f82e3;
+
+    line-height: 20px;
+}
+
+.quote p {
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+.quote h3 {
+    font-size: 15px;
+}
+
+.quote a {
+    color: #8f82e3;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #8f82e3;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 42px;
+}
+
+.cta p {
+    margin: 10px 0 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+
+    background: white;
+    color: #8f82e3;
+
+    padding: 12px 35px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #17152b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    font-size: 13px;
+}
+
+footer p {
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding: 60px 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .phone {
+        width: 200px;
+        height: 380px;
+    }
+
+    .phone-screen {
+        height: 335px;
+    }
+
+
+    .features {
+        padding: 50px 20px;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+
+    .purple-section {
+        padding: 60px 20px;
+    }
+
+
+    .testimonials {
+        padding: 60px 20px;
+    }
+
+
+    .benefits {
+        padding: 60px 20px;
+    }
+
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .founder {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+}
