@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
-    color: #29234a;
+    color: blue;
     line-height: 1.6;
 }
 
@@ -15,7 +15,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 
 /* =========================
    HEADER
@@ -37,7 +36,7 @@ header {
     width: 65px;
     height: auto;
     margin-top: 10px;
-};
+}
 
 nav {
     display: flex;
@@ -47,23 +46,6 @@ nav {
 nav a {
     font-size: 14px;
 }
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.menu-btn {
-    display: none;
-
-    border: none;
-    background: none;
-    color: white;
-
-    font-size: 25px;
-}
-
 
 /* =========================
    HERO
@@ -71,7 +53,6 @@ button {
 
 .hero {
     min-height: 550px;
-
     background: #b9dcf5;
 
     display: flex;
@@ -79,7 +60,6 @@ button {
     justify-content: center;
 
     gap: 80px;
-
     padding: 70px 10%;
 }
 
@@ -87,7 +67,7 @@ button {
     max-width: 500px;
 }
 
-.hero-text h1 {
+.hero-text h3 {
     font-size: 48px;
     line-height: 1.15;
     margin-bottom: 20px;
@@ -100,98 +80,58 @@ button {
 
 .main-btn {
     display: inline-block;
-
     background: #168de2;
     color: white;
-
     padding: 12px 30px;
     border-radius: 30px;
-
     font-weight: 600;
 }
-
 
 /* PHONE */
 
-.phone {
-    width: 230px;
-    height: 430px;
-
-    background: #1d1d1d;
-
-    border-radius: 30px;
-    padding: 10px;
-
-    box-shadow: 0 15px 35px rgba(0,0,0,.2);
-}
-
-.phone-top {
-    width: 80px;
-    height: 15px;
-
-    background: #111;
-
-    border-radius: 20px;
-
-    margin: auto;
-}
-
-.phone-screen {
+.phone-box {
+    width: 200px;
     height: 380px;
-
     background: white;
-
     border-radius: 22px;
-
-    margin-top: 8px;
-    padding: 30px 20px;
 }
 
-.screen-title {
-    font-size: 22px;
-    font-weight: 600;
+/* IMAGE */
+
+.phone-image {
+    width: 150px;
+    height: auto;
 }
 
-.screen-box {
-    height: 100px;
+/* =========================
+   MOBILE
+========================= */
 
-    background: #b9dcf5;
+@media (max-width: 768px) {
 
-    border-radius: 15px;
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
 
-    margin: 20px 0;
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h3 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+    }
+
+    .phone {
+        margin: 0 auto;
+    }
 }
-
-.screen-line {
-    height: 10px;
-    width: 100%;
-
-    background: #ddd;
-
-    border-radius: 10px;
-
-    margin-bottom: 10px;
-}
-
-.screen-line.short {
-    width: 70%;
-}
-
-.phone-screen button {
-    margin-top: 25px;
-
-    width: 100%;
-
-    border: none;
-    background: #168de2;
-    color: white;
-
-    padding: 10px;
-
-    border-radius: 20px;
-}
-
-
 /* =========================
    FEATURES
 ========================= */
@@ -258,6 +198,24 @@ button {
 .purple-content {
     max-width: 550px;
     margin: auto;
+}
+.idea-box {
+    width: 250px;
+    height: 300px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+}
+.white-card {
+    background-color: white;
+}
+.idea-man {
+    width: 200px;
+    height: auto;
 }
 
 .illustration {
