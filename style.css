@@ -13,7 +13,10 @@ body {
     background: white;
     color: #333;
 }
-
+.logo img {
+    width: 50px;
+    height: auto;
+}
 
 /* =========================
    NAVBAR
@@ -70,12 +73,27 @@ nav a {
 }
 
 /* SECOND ROW */
-
+.design-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.development-image {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.branding-image {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
 .services-row-two {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
+
 
 
 /* Make cards fill their grid areas */
@@ -151,6 +169,8 @@ nav a {
 /* =========================
    SERVICE CARDS
 ========================= */
+
+
 
 .service-card {
     border-radius: 10px;
