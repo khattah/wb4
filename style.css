@@ -159,8 +159,9 @@ nav a {
 .app-button {
     display: inline-block;
 
-    background: #087ed9;
-    color: white;
+    /* Client theme update: reuse the yellow accent with readable dark text. */
+    background: #ffe6bb;
+    color: #222;
 
     text-decoration: none;
 
@@ -1045,3 +1046,8 @@ footer p {
 @media (max-width: 600px) {
     .footer { flex-direction: column; }
 }
+
+/* Keep the primary call-to-action icon compact at every screen size. */
+.app-button { display: inline-flex; align-items: center; gap: 10px; }
+.app-button img { width: 20px; height: 20px; object-fit: contain; }
+.app-button:focus-visible { outline: 3px solid #222; outline-offset: 4px; }
