@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Digital Agency</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Poppins Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
-
     <!-- NAVBAR -->
     <header>
         <div class="logo">
-    <img src="images/apple.svg" alt="Apple">
-</div>
+            <img src="images/apple.svg" alt="Apple">
+        </div>
 
         <nav>
             <a href="#">Home</a>
@@ -26,105 +28,108 @@
             <a href="#">Contact</a>
         </nav>
 
-      <div class="menu">
-    <img src="images/arrow.svg" alt="Menu">
-</div>
-        
+        <div class="menu">
+            <img src="images/arrow.svg" alt="Menu">
+        </div>
     </header>
 
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="services-row-one">
+            <div class="demo-card">
+                <div class="demo-text">
+                    <h1>Get a demo application</h1>
 
-    <!-- TOP SERVICES -->
-  <section class="services">
+                    <p>
+                        Build a user-friendly app that helps you stay connected,
+                        organized and productive.
+                    </p>
 
-    <!-- FIRST ROW: 2fr + 1fr -->
-    <div class="services-row-one">
+                    <a href="#" class="app-button">
+                        <img src="images/minicin.png" alt="">
+                        App Store
+                    </a>
+                </div>
 
-        <div class="demo-card">
-            <div class="demo-text">
-                
-                <h1>Get a demo application</h1>
+                <div class="phone">
+                    <img src="images/phone.png" alt="Mobile application">
+                </div>
+            </div>
+
+            <div class="service-card green">
+                <div class="service-icon">
+                    <img
+                        src="images/code.svg"
+                        alt="Clean Code"
+                        class="clean-code-image"
+                    >
+                </div>
+
+                <h2>Clean Code</h2>
 
                 <p>
-                    Build a user-friendly app that helps you stay connected,
-                    organized and productive.
+                    We make sure your code is clean, organized and easy to
+                    maintain.
                 </p>
-
-                <a href="#" class="app-button">
-                    <img src="images/minicin.png" alt="Apple icon">
-                    App Store
-                </a>
-
-            </div>
-
-            <div class="phone">
-                <img src="images/phone.png" alt="Mobile application">
             </div>
         </div>
 
+        <div class="services-row-two">
+            <div class="service-card pink">
+                <div class="service-icon">
+                    <img
+                        src="images/design.svg"
+                        alt="Design"
+                        class="design-image"
+                    >
+                </div>
 
-        <div class="service-card green">
-            <div class="service-icon">
-                <img src="images/code.svg" alt="Clean Code" class="clean-code-image">
+                <h2>Web Design</h2>
+
+                <p>
+                    Build attractive and responsive websites that look great
+                    on every device.
+                </p>
             </div>
 
-            <h2>Clean Code</h2>
+            <div class="service-card yellow">
+                <div class="service-icon">
+                    <img
+                        src="images/development.svg"
+                        alt="Development"
+                        class="development-image"
+                    >
+                </div>
 
-            <p>
-                We make sure your code is clean, organized and easy to
-                maintain.
-            </p>
+                <h2>Development</h2>
+
+                <p>
+                    Create modern applications with powerful and reliable
+                    technologies.
+                </p>
+            </div>
+
+            <div class="service-card purple">
+                <div class="service-icon">
+                    <img
+                        src="images/branding.svg"
+                        alt="Branding"
+                        class="branding-image"
+                    >
+                </div>
+
+                <h2>Branding</h2>
+
+                <p>
+                    Create a strong visual identity that represents your
+                    business.
+                </p>
+            </div>
         </div>
-
-    </div>
-
-
-    <!-- SECOND ROW: 1fr + 1fr + 1fr -->
-    <div class="services-row-two">
-
-        <div class="service-card pink">
-            <div class="service-icon"></div>
-               <img src="images/design.svg" alt="Design" class="design-image">
-            <h2>Web Design</h2>
-
-            <p>
-                Build attractive and responsive websites that look great
-                on every device.
-            </p>
-        </div>
-
-
-        <div class="service-card yellow">
-            <div class="service-icon"></div>
-            <img src="images/development.svg" alt="Development" class="development-image">
-            <h2>Development</h2>
-             
-            <p>
-                Create modern applications with powerful and reliable
-                technologies.
-            </p>
-        </div>
-
-
-        <div class="service-card purple">
-
-             <div>
-                <img src="images/branding.svg" alt="Branding" class="branding-image">
-            <h2>Branding</h2>
-</div>
-            <p>
-                Create a strong visual identity that represents your
-                business.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
+    </section>
 
     <!-- STRATEGIC PLANNING -->
     <section class="planning">
-
         <div class="planning-image">
             <img src="images/planning.png" alt="Strategic planning">
         </div>
@@ -139,25 +144,27 @@
             </p>
 
             <div class="app-development">
-                <img src="images/app-development.png" alt="App Development">
+                <img
+                    src="images/app-development.png"
+                    alt="App Development"
+                >
 
-                <h3>App Development</h3>
+                <h2>App Development</h2>
 
                 <p>
                     Develop an awesome app for your company business
                     to reach your target customers more easily.
                 </p>
 
-                <button>↓</button>
+                <button type="button" aria-label="Explore app development">
+                    ↓
+                </button>
             </div>
         </div>
-
     </section>
-
 
     <!-- TESTIMONIALS -->
     <section class="testimonials">
-
         <p class="small-title">TESTIMONIALS</p>
 
         <h2>We are committed expert partners</h2>
@@ -165,130 +172,132 @@
         <p class="intro">
             We place huge value on strong relationships and have seen
             the benefit they bring to our business.
-
+        </p>
 
         <div class="testimonial-card testimonial-pink">
-            <img src="images/person1.jpg" alt="Client">
+            <img src="images/person1.jpg" alt="Mark Wilson">
 
             <div>
-                <p>
-                   <h6>“I have used their services and I am very impressed
-                    with the quality and professionalism.”</h6> 
-                </p>
+                <h5>
+                    “I have used their services and I am very impressed
+                    with the quality and professionalism.”
+                </h5>
 
-                <h4>MARK WILSON</h4>
+                <h3>MARK WILSON</h3>
             </div>
         </div>
-
 
         <div class="testimonial-card testimonial-yellow">
-            <img src="images/person2.jpg" alt="Client">
+            <img src="images/person2.jpg" alt="Celia Almeida">
 
             <div>
-                <p>
-                    <h6>“The team was very professional and helped us achieve
-                    our goals. Excellent customer service.”</h6>
-                </p>
+                <h5>
+                    “The team was very professional and helped us achieve
+                    our goals. Excellent customer service.”
+                </h5>
 
-                <h4>CELIA ALMEIDA</h4>
+                <h3>CELIA ALMEIDA</h3>
             </div>
         </div>
-
 
         <div class="testimonial-card testimonial-green">
-            <img src="images/person3.jpg" alt="Client">
+            <img src="images/person3.jpg" alt="Bob Roberts">
 
             <div>
-                <p>
-                    <h6>“Their creative ideas and technical expertise helped
-                    us improve our business significantly.”</h6>
-                </p>
+                <h5>
+                    “Their creative ideas and technical expertise helped
+                    us improve our business significantly.”
+                </h5>
 
-                <h4>BOB ROBERTS</h4>
+                <h3>BOB ROBERTS</h3>
             </div>
         </div>
-
     </section>
-
 
     <!-- BENEFITS -->
     <section class="benefits">
-
         <h2>Benefits of working with us</h2>
 
         <div class="benefit-grid">
-
             <div class="benefit-card">
                 <span>01</span>
-                <h3>High Quality</h3>
+                <h2>High Quality</h2>
+
                 <p>
                     We provide high-quality services and professional
                     solutions for every project.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
 
             <div class="benefit-card">
                 <span>02</span>
-                <h3>Creative Team</h3>
+                <h2>Creative Team</h2>
+
                 <p>
                     Our creative team develops unique and effective
                     ideas for your business.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
 
             <div class="benefit-card">
                 <span>03</span>
-                <h3>Amazing Results</h3>
+                <h2>Amazing Results</h2>
+
                 <p>
                     We focus on delivering measurable results that
                     help your company grow.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
 
             <div class="benefit-card">
                 <span>04</span>
-                <h3>Best Pricing</h3>
+                <h2>Best Pricing</h2>
+
                 <p>
                     Affordable and transparent pricing for businesses
                     of every size.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
 
             <div class="benefit-card">
                 <span>05</span>
-                <h3>Innovations</h3>
+                <h2>Innovations</h2>
+
                 <p>
                     We use modern technologies and innovative ideas
                     to solve problems.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
 
             <div class="benefit-card">
                 <span>06</span>
-                <h3>24/7 Support</h3>
+                <h2>24/7 Support</h2>
+
                 <p>
                     Our support team is available whenever you need
                     assistance.
                 </p>
-                <button>more</button>
+
+                <button type="button">more</button>
             </div>
-
         </div>
-
     </section>
-
 
     <!-- ABOUT US -->
     <section class="about">
-
         <div class="about-text">
             <h2>About Us</h2>
-              
+
             <p>
                 Simple tools designed to improve your business and make
                 your digital experience easier. We provide professional
@@ -301,28 +310,22 @@
             </p>
         </div>
 
-
         <div class="about-person">
-
-            <div class="quote">“</div>
+            <div class="quote" aria-hidden="true">“</div>
 
             <img src="images/boss.jpg" alt="Team member">
 
-            <h3>
+            <h2>
                 I help companies tincidunt tortor aliquam
                 nulla facilisi cras fermentum odio.
-            </h3>
+            </h2>
 
-            <button>Find out more</button>
-
+            <button type="button">Find out more</button>
         </div>
-
     </section>
-
 
     <!-- PRICING -->
     <section class="pricing">
-
         <p>GET STARTED</p>
 
         <h2>Simple, Transparent Pricing</h2>
@@ -334,21 +337,21 @@
             No hidden fees and no complicated contracts.
         </p>
 
-        <button>Get started</button>
-
-        <small>
-            Copyright 2026 Digital Agency
-        </small>
-
+        <button type="button">Get started</button>
     </section>
 
-
     <!-- FOOTER -->
-    <footer>
-        <p>
-            Sample text. Click to select the Text Element.
-        </p>
-    </footer>
+    <footer class="footer">
+        <p>&copy; 2026 Digital Agency. All rights reserved.</p>
 
+        <a href="https://www.linkedin.com/in/YOUR-PROFILE/">
+            <img
+                src="images/linkedin.svg"
+                alt="LinkedIn profile"
+                width="30"
+                height="30"
+            >
+        </a>
+    </footer>
 </body>
 </html>
