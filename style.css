@@ -1086,3 +1086,56 @@ footer p {
         height: auto;
     }
 }
+
+/* Tablet: readable text and flexible columns between phone and desktop sizes. */
+@media (min-width: 601px) and (max-width: 900px) {
+    .services { padding: 24px 20px; }
+    .services-row-one { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+    .services-row-two { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .demo-text, .service-card, .planning-content { min-width: 0; }
+    .demo-card { flex-direction: column; }
+    .demo-text { padding: 24px; }
+    .demo-text h1 { font-size: 24px; }
+    .demo-text p, .service-card p { font-size: 16px; line-height: 1.6; }
+    .service-card h2 { font-size: 20px; }
+    .phone { width: 100%; }
+    .phone img { width: 140px; max-width: 100%; }
+    .app-button { font-size: 16px; padding: 12px 20px; }
+
+    /* Give planning columns equal space and let the inner card fill its column. */
+    .planning {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 40px 24px;
+        gap: 24px;
+    }
+    .planning-image, .planning-content { width: 100%; }
+    .planning-content h2 { font-size: 24px; overflow-wrap: break-word; }
+    .planning-content > p { font-size: 16px; line-height: 1.6; }
+    .app-development { width: 100%; padding: 24px; }
+    .app-development p { font-size: 16px; line-height: 1.6; }
+    .app-development button { width: 40px; height: 40px; }
+
+    /* Apply readable type to the remaining tablet sections. */
+    .testimonials { padding: 40px 24px; }
+    .small-title, .intro { font-size: 16px; line-height: 1.6; }
+    .testimonials > h2, .benefits > h2 { font-size: 28px; }
+    .testimonial-card { max-width: 100%; padding: 24px; }
+    .testimonial-card h5 { font-size: 16px; line-height: 1.6; }
+    .testimonial-card h3 { font-size: 18px; margin-top: 12px; }
+    .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .benefit-card { min-width: 0; padding: 24px; }
+    .benefit-card span { font-size: 40px; }
+    .benefit-card h2 { font-size: 22px; margin: 12px 0; }
+    .benefit-card p, .benefit-card button { font-size: 16px; }
+    .about { padding: 40px 24px; gap: 24px; }
+    .about-text { min-width: 0; }
+    .about-text h2 { font-size: 32px; }
+    .about-text p { font-size: 16px; }
+    .about-person h2 { font-size: 22px; }
+    .about-person button { font-size: 16px; }
+    .pricing > p:first-child, .pricing-text, .pricing button { font-size: 16px; }
+    .pricing h2 { font-size: 28px; }
+    .pricing h1 { font-size: 48px; }
+    .pricing-text { max-width: 550px; }
+}
