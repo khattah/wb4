@@ -1051,3 +1051,38 @@ footer p {
 .app-button { display: inline-flex; align-items: center; gap: 10px; }
 .app-button img { width: 20px; height: 20px; object-fit: contain; }
 .app-button:focus-visible { outline: 3px solid #222; outline-offset: 4px; }
+
+/* Mobile fix: keep service cards within the viewport with equal spacing. */
+@media (max-width: 600px) {
+    .services {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services-row-one,
+    .services-row-two {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .demo-card,
+    .service-card,
+    .demo-text {
+        min-width: 0;
+    }
+
+    /* Stack demo text and phone to prevent horizontal overflow. */
+    .demo-card {
+        flex-direction: column;
+    }
+
+    .phone {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .phone img {
+        width: 120px;
+        max-width: 100%;
+        height: auto;
+    }
+}
