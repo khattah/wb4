@@ -1,6 +1,7 @@
 /* GENERAL: use border-box sizing so padding stays within the viewport. */
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; font-family: "Poppins", sans-serif; color: #333; line-height: 1.7; }
+/* Page theme: yellow background behind sections and cards. */
+body { background: #ffe6bb; margin: 0; font-family: "Poppins", sans-serif; color: #333; line-height: 1.7; }
 img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, h4, h5, h6, p { margin: 0 0 16px; }
 h1, h2, h3, h4 { line-height: 1.3; }
